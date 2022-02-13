@@ -1,0 +1,28 @@
+
+
+.text {
+    background-color: aqua;
+    color: blue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 15px;
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    border: 1px solid burlywood;
+}
+
+#link {
+    text-decoration: none;
+    color: aliceblue;
+    background-color: #3333dd;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+#link:hover {
+    background-color: #6666dd;
+}
