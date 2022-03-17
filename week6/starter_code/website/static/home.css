@@ -1,0 +1,24 @@
+
+
+.blog {
+    margin: 10px 15%;
+    padding: 50px;
+    background-color: aliceblue;
+    font-family: 'Courier New', Courier;
+}
+
+.blog:hover {
+    background-color: rgb(231, 249, 255);
+}
+
+.blog-content {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 2;
+}
+
+#site-title {
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 100;  /* make less bold */
+    color: rgb(50, 50, 50);
+}

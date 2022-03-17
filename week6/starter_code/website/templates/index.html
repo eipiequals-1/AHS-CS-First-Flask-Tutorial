@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1 id="site-title">Super Blogger!</h1>
+    <!-- html for each post -->
+    {% for blog in blogs %}
+        <div class="blog">
+            <h7 class="blog-author">{{ blog.author }}</h7>
+            <small class="blog-date">{{ blog.date }}</small>
+            <h2 class="blog-title">{{ blog.title }}</h2>
+            <p class="blog-content">{{ blog.content }}</p>
+        </div>
+    {% endfor %}
+{% endblock %}

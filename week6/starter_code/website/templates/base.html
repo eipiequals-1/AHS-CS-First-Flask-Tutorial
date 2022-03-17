@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | {{ title }}</title>
+    <!-- link base stylesheet that all html pages will have in common -->
+    <link rel="stylesheet" href="../static/base.css">
+    <!-- link stylesheet specified in route function -->
+    <link rel="stylesheet" href={{ style }}>
+</head>
+<body>
+    <nav class="main-nav">
+        <a href="/home">Home</a>
+        <a>Login</a>
+        <a>Create Post</a>
+        <a>Account</a>
+        <a href="/sign-up">Sign Up</a>
+    </nav>
+    {% with messages = get_flashed_messages(with_categories=True) %}
+        {% if messages %}
+            {% for category, message in messages %}
+                {% if category == "success" %}
+                    <div class="flash-success">
+                        <h2>{{ message }}</h2>
+                    </div>
+                {% else %}
+                    <div class="flash-error">
+                        <h2>{{ message }}</h2>
+                    </div>
+                {% endif %}
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+    {% block content %}{% endblock %}
+</body>
+</html>
