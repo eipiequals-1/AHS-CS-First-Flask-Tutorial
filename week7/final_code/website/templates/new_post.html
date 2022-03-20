@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <form method="POST">
+        <h3 id="new-post-title">Create Post</h3>
+        <div class="enter-text">
+            <h4>Post Title</h4>
+            <input type="text" name="post-title" placeholder="Post Title"/>
+        </div>
+        <div class="enter-text">
+            <h4>Post Content</h4>
+            <textarea rows="5" cols="100" style="resize: none;" type="text" name="post-content" placeholder="Post Content"></textarea>
+        </div>
+        <button class="create-post" type="submit">Submit</button>
+    </form>
+
+{% endblock %}
